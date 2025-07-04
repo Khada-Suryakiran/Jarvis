@@ -6,7 +6,7 @@ from io import BytesIO
 from fpdf import FPDF
 from docx import Document
 from dotenv import load_dotenv
-from openai import OpenAI
+import openai
 from datetime import datetime
 
 load_dotenv()
@@ -18,7 +18,8 @@ if not GOOGLE_API_KEY or not OPENAI_API_KEY:
 
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
-client = OpenAI(api_key=OPENAI_API_KEY)
+openai.api_key = OPENAI_API_KEY
+
 
 tmpl_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
 app = Flask(__name__, template_folder=tmpl_dir, static_folder="static")
