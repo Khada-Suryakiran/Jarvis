@@ -56,7 +56,6 @@ pip install -r requirements.txt
 ### 4. Configure environment
 Create a `.env` file in the root directory (if not already present):
 ```env
-SECRET_KEY=your_secret_key_here
 GOOGLE_GENAI_API_KEY=your_google_gemini_api_key
 OPENAI_API_KEY=your_openai_api_key
 ```
@@ -102,7 +101,6 @@ OPENAI_API_KEY=your_openai_api_key
 
 ### Example `.env` file
 ```env
-SECRET_KEY=your_secret_key_here
 GOOGLE_GENAI_API_KEY=your_google_gemini_api_key
 OPENAI_API_KEY=your_openai_api_key
 ```
@@ -119,15 +117,6 @@ OPENAI_API_KEY=your_openai_api_key
 - Integrate AI APIs (OpenAI, Gemini, HuggingFace, etc.).
 - Build task automation (calendar, reminders, system commands).
 - Add authentication system for multiple users.
-
----
-
-## 🤝 Contributing
-1. Fork the repo  
-2. Create your feature branch (`git checkout -b feature/new-feature`)  
-3. Commit your changes (`git commit -m 'Add new feature'`)  
-4. Push to the branch (`git push origin feature/new-feature`)  
-5. Create a Pull Request  
 
 ---
 
