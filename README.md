@@ -1,4 +1,4 @@
-# Jarvis 🧑‍💻🤖
+# Cogniflow 🧑‍💻🤖
 
 Jarvis is a lightweight Python-based personal assistant web application.  
 It provides a simple interface (web UI) to interact with assistant features such as task automation, AI responses, and external API integration.
